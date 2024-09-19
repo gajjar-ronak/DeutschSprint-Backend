@@ -1,5 +1,7 @@
 # DeutschSprint-Backend
 
+![Deutsch Sprint](https://github.com/user-attachments/assets/59386e3d-303a-41ff-a0cd-4c1f65f0ba02)
+
 **DeutschSprint** is a FastAPI-powered web application designed to help users learn German vocabulary quickly through interactive multiple-choice quizzes (MCQs). The app dynamically generates 20 random questions from an Excel sheet containing German words and their English meanings, with progress tracked over time. Performance data, including correct and incorrect answers, is logged into MongoDB for later analysis, making DeutschSprint ideal for anyone seeking to rapidly boost their German language skills.
 
 ## Features
