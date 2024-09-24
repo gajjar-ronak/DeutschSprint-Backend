@@ -1,8 +1,6 @@
-# DeutschSprint-Backend
+# DeutschLearning.md
 
-![Deutsch Sprint](https://github.com/user-attachments/assets/59386e3d-303a-41ff-a0cd-4c1f65f0ba02)
-
-**DeutschSprint** is a FastAPI-powered web application designed to help users learn German vocabulary quickly through interactive multiple-choice quizzes (MCQs). The app dynamically generates 20 random questions from an Excel sheet containing German words and their English meanings, with progress tracked over time. Performance data, including correct and incorrect answers, is logged into MongoDB for later analysis, making DeutschSprint ideal for anyone seeking to rapidly boost their German language skills.
+**DeutschLearning** is a FastAPI-powered web application designed to help users learn German vocabulary quickly through interactive multiple-choice quizzes (MCQs). The app dynamically generates 20 random questions from an Excel sheet containing German words and their English meanings, with progress tracked over time. Performance data, including correct and incorrect answers, is logged into MongoDB for later analysis, making DeutschLearning ideal for anyone seeking to rapidly boost their German language skills.
 
 ## Features
 
@@ -31,16 +29,16 @@
 ### Step-by-Step Setup
 
 **Clone the Repository**:
-   `git clone url`
-   `cd DeutschSprint`
+`git clone url`
+`cd DeutschSprint`
 
 Install the Required Python Packages:
 Run the following command to install FastAPI, MongoDB driver, Pandas, and other dependencies:
 
 `pip install -r requirements.txt`
 
-
 ### Set up MongoDB:
+
 Ensure MongoDB is running locally, or update the MongoDB connection string in your `.env` file to point to your remote database.
 
 ### Configure Environment Variables:
@@ -51,15 +49,13 @@ Add the following environment variables to the `.env` file:
 
 MONGO_URL=mongodb://localhost:27017/
 
-### Prepare Your Excel File:
-Ensure that you have a file named questions.xlsx in the project root, with multiple sheets (e.g., A1, A2, etc.), each containing two columns:
+### Prepare Your Database:
 
-Column 1: German
-Column 2: English
+Ensure that you have a file named questions.xlsx in the project root, with multiple sheets (e.g., A1, A2, etc.), each containing two columns:
 
 ### Run the Application:
 
 Start the FastAPI server using Uvicorn:
 `uvicorn main:app --reload`
-The API will be accessible at `http://127.0.0.1:8000`.
 
+The API will be accessible at `http://127.0.0.1:8000`.
